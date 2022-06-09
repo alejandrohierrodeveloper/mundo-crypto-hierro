@@ -70,8 +70,13 @@
     background-color: #034078;
     border: 3px #1282a2 solid;
     cursor: pointer;
+    transform: rotate(360deg);
+    transition: .5s;
 }
-
+/* .navigationButtons li a:hover {
+    -webkit-animation: shake infinite  1s;
+     animation: shake infinite 1s;
+} */
 .footer {
     background-color: #1282a2;
     display: flex;
@@ -295,7 +300,11 @@ th {
     width: 100px;
     height: 100px;
 }
-
+.crypto_logo:hover {
+    transform: scale(1.4);
+    transition: .5s;
+    cursor: pointer;
+}
 .cripto_card {
     display: flex;
     flex-direction: column;
