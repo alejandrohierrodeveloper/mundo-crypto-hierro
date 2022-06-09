@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MUNDO CRIPTO | Contacto</title>
+</head>
+
+<body class="body globalFont">
+    <header class="header">
+        <a href="./index.html"><img src="img/logo.jpg" alt="logo" class="logo"></a>
+        <div class="titleAndNav">
+            <h1>MUNDO-CRIPTO: Datos sobre criptomonedas</h1>
+            <nav>
+                <ul class="navigationButtons">
+                    <li><a href="./index.html">Monedas</a></li>
+                    <li><a href="./aprender.html">Aprende sobre cripto</a></li>
+                    <li><a href="./noticias.html">Noticias</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main mainContacto">
+        <!-- El formulario lo hago con el metodo post porque si bien no necesito que vaya el contenido encriptado, en protocolo http por convencion se usa el POST para insertar datos en el servidor-->
+        <section class="contacto">
+            <form accept="#" method="POST">
+                <div class="formContacto">
+                    <div class="formContactoItem">
+                        <label type="text" for="motivo"><span>Motivo</span></label>
+                        <select name="motivo">
+                            <option value="1">Quiero que listen mi Exchange</option>
+                            <option value="2">Quiero que listen mi moneda</option>
+                            <option value="3">Solo quiero suscribirme a newsletter</option>
+                            <option value="4">Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label type="text" for="motivo"><span>Suscribirme al newsletter</span></label>
+                        <input type="checkbox" name="newsletter">
+                    </div>
+                    <div class="formContactoItem">
+                        <label type="text" for="motivo"><span>E-mail</span></label>
+                        <input type="text" name="email" placeholder="test@example.com">
+                    </div>
+                    <div class="formContactoItem">
+                        <label type="text" for="comentario"><span>Comentario</span></label>
+                        <textarea name="comentario" cols="50" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <span>Urgencia para obtener respuesta</span>
+                        <input type="radio" name="urgencia" value="baja">
+                        <span>baja</span>
+                        <input type="radio" name="urgencia" value="media">
+                        <span>media</span>
+                        <input type="radio" name="urgencia" value="alta">
+                        <span>alta</span>
+                    </div>
+                    <div class="formContactoItem">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- PIE DE PAGINA -->
+    <footer class="footer">
+        <section>
+            © 2022 Mundo Crypto. All rights reserved
+        </section>
+        <section>
+            <ul>
+                <li>
+                    <h3>Redes sociales</h3>
+                </li>
+                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+            </ul>
+        </section>
+    </footer>
+
+</body>
+
+</html>
