@@ -31,6 +31,7 @@
     justify-content: center;
     height: 15vh;
     align-items: center;
+    min-height: 10rem;
 }
 
 .titleAndNav {
@@ -73,10 +74,7 @@
     transform: rotate(360deg);
     transition: .5s;
 }
-/* .navigationButtons li a:hover {
-    -webkit-animation: shake infinite  1s;
-     animation: shake infinite 1s;
-} */
+
 .footer {
     background-color: #1282a2;
     display: flex;
@@ -85,6 +83,7 @@
     align-items: center;
     height: 15vh;
     color: white;
+    min-height: 10rem;
 }
 
 .footer section ul li {
@@ -111,14 +110,38 @@
 
 .main {
     height: 70vh;
+    min-height: 40rem;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.mainNews {
+
+.mainFaq {
     height: 100%;
+    display: block;
 }
+
+.mainContacto {
+    height: 80vh;
+    min-height: 50rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainNews {
+    height: 100vh;
+    min-height: 100%;
+    overflow-y: scroll;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+}
+
 .mainLearn {
     height: 70vh;
     color: white;
@@ -169,6 +192,7 @@ th {
     display: flex;
     flex-direction: column;
     padding: 50px;
+    min-height: 70vh;
 }
 
 .faq article {
@@ -180,7 +204,8 @@ th {
     flex-direction: column;
     align-items: center;
 }
-.news h2{
+
+.news h2 {
     margin: 30px;
 }
 
@@ -188,10 +213,18 @@ th {
     display: flex;
     padding: 50px;
 }
-.newsItem img{
+
+.newsItem img {
     margin: 15px;
     height: 200px;
 }
+
+.newsItem img:hover {
+    filter: blur(5px);
+    transition: .5s;
+    cursor: pointer;
+}
+
 .newsItem article {
     margin-left: 10px;
 }
@@ -300,11 +333,13 @@ th {
     width: 100px;
     height: 100px;
 }
+
 .crypto_logo:hover {
     transform: scale(1.4);
     transition: .5s;
     cursor: pointer;
 }
+
 .cripto_card {
     display: flex;
     flex-direction: column;
@@ -322,6 +357,7 @@ th {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        min-height: 30rem;
     }
 
     .logo {
@@ -341,12 +377,14 @@ th {
     .footer {
         flex-direction: column;
         height: 20vh;
+        min-height: 15rem;
     }
 
     .main {
         height: 140vh;
         align-items: center;
         flex-direction: column;
+        min-height: 80rem;
     }
 
     .mainLearn {
@@ -356,15 +394,16 @@ th {
     }
 
     .mainContacto {
-        height: 60vh;
+        height: 10vh;
+        align-items: center;
+        flex-direction: column;
+        min-height: 50rem;
     }
 
-    .mainFaq {
-        height: 60vh;
-    }
     .mainNews {
         height: 180vh;
     }
+
     .cryptoGrid {
         display: grid;
         width: 600px;
@@ -400,23 +439,27 @@ th {
 @media (max-width: 480px) {
     .main {
         height: 260vh;
+        min-height: 30rem;
+        min-height: 160rem;
     }
-    
+
     .mainLearn {
         height: 70vh;
     }
+
     .mainContacto {
-        height: 80vh;
+        height: 10vh;
+        min-height: 50rem;
     }
-    .mainFaq {
-        height: 100%;
-    }
+
     .learn section {
         width: 90vw;
     }
+
     .mainNews {
         height: 100%;
     }
+
     .cryptoGrid {
         display: grid;
         width: 100vw;

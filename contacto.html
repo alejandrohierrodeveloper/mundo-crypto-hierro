@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>MUNDO CRIPTO | Contacto</title>
 </head>
@@ -31,14 +33,14 @@
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->
-    <main class="main mainContacto">
+    <main class="mainContacto">
         <!-- El formulario lo hago con el metodo post porque si bien no necesito que vaya el contenido encriptado, en protocolo http por convencion se usa el POST para insertar datos en el servidor-->
         <section class="contacto">
             <form accept="#" method="POST">
                 <div class="formContacto">
                     <div class="formContactoItem">
-                        <label type="text" for="motivo"><span>Motivo</span></label>
-                        <select name="motivo">
+                        <label type="text" for="motivo" class="form-label"><span>Motivo</span></label>
+                        <select name="motivo" class="form-select">
                             <option value="1">Quiero que listen mi Exchange</option>
                             <option value="2">Quiero que listen mi moneda</option>
                             <option value="3">Solo quiero suscribirme a newsletter</option>
@@ -46,28 +48,29 @@
                         </select>
                     </div>
                     <div>
-                        <label type="text" for="motivo"><span>Suscribirme al newsletter</span></label>
-                        <input type="checkbox" name="newsletter">
+                        <label type="text" for="motivo" class="form-label"><span>Suscribirme al
+                                newsletter</span></label>
+                        <input type="checkbox" name="newsletter" class="form-check-input">
                     </div>
                     <div class="formContactoItem">
-                        <label type="text" for="motivo"><span>E-mail</span></label>
-                        <input type="text" name="email" placeholder="test@example.com">
+                        <label type="text" for="motivo" class="form-label"><span>E-mail</span></label>
+                        <input type="text" name="email" placeholder="test@example.com" class="form-control">
                     </div>
                     <div class="formContactoItem">
-                        <label type="text" for="comentario"><span>Comentario</span></label>
-                        <textarea name="comentario" cols="50" rows="10"></textarea>
+                        <label type="text" for="comentario" class="form-label"><span>Comentario</span></label>
+                        <textarea name="comentario" cols="50" rows="10" class="form-control"></textarea>
                     </div>
                     <div>
                         <span>Urgencia para obtener respuesta</span>
-                        <input type="radio" name="urgencia" value="baja">
+                        <input class="form-check-input" type="radio" name="urgencia" value="baja">
                         <span>baja</span>
-                        <input type="radio" name="urgencia" value="media">
+                        <input class="form-check-input" type="radio" name="urgencia" value="media">
                         <span>media</span>
-                        <input type="radio" name="urgencia" value="alta">
+                        <input class="form-check-input" type="radio" name="urgencia" value="alta">
                         <span>alta</span>
                     </div>
                     <div class="formContactoItem">
-                        <input type="submit" value="Enviar">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
                     </div>
                 </div>
             </form>
@@ -90,7 +93,9 @@
             </ul>
         </section>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
