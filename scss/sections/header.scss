@@ -1,0 +1,57 @@
+// header
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+    align-items: center;
+    min-height: 10rem;
+
+    .logo {
+        height: 100px;
+        width: 100px;
+        margin: 20px;
+    }
+
+    .titleAndNav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        h1 {
+            color: $indigo-dye;
+            margin: 5px;
+        }
+    }
+
+    .navigationButtons {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+
+        }
+
+        li {
+            list-style-type: none;
+            background-color: $cg-blue;
+            border: 3px $indigo-dye solid;
+            padding: 5px;
+            margin: 10px;
+
+            &:hover {
+                list-style-type: none;
+                background-color: $indigo-dye;
+                border: 3px $cg-blue solid;
+                cursor: pointer;
+                transform: rotate(360deg);
+                transition: .5s;
+            }
+        }
+
+    }
+}

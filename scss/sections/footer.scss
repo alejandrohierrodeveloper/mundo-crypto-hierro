@@ -1,0 +1,32 @@
+// footer
+.footer {
+    background-color: $cg-blue;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    color: white;
+    min-height: 10rem;
+
+    section ul li {
+        list-style-type: none;
+        padding: 5px;
+
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                color: rgb(0, 0, 0);
+            }
+        }
+
+        h3 {
+            color: white;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,116 @@
+// INDEX
+#index {
+
+    .main {
+        height: 70vh;
+        min-height: 40rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cryptoGrid {
+        display: grid;
+        width: 600px;
+        height: 600px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "btc eth usdt bnb"
+            "solana Polkadot Avalanche Polygon"
+            "DAI LiteCoin ChainLink Tron"
+            "Algorand OneInch RavenCoin PaxGold";
+        /* background-color: #303030; */
+        align-content: center;
+        justify-items: center;
+        align-items: end;
+    }
+
+    .btc {
+        grid-area: btc;
+    }
+
+    .eth {
+        grid-area: eth;
+    }
+
+    .usdt {
+        grid-area: usdt;
+    }
+
+    .bnb {
+        grid-area: bnb;
+    }
+
+    .solana {
+        grid-area: solana;
+    }
+
+    .Polkadot {
+        grid-area: Polkadot;
+    }
+
+    .Avalanche {
+        grid-area: Avalanche;
+    }
+
+    .Polygon {
+        grid-area: Polygon;
+    }
+
+    .DAI {
+        grid-area: DAI;
+    }
+
+    .LiteCoin {
+        grid-area: LiteCoin;
+    }
+
+    .ChainLink {
+        grid-area: ChainLink;
+    }
+
+    .Tron {
+        grid-area: Tron;
+    }
+
+    .Algorand {
+        grid-area: Algorand;
+    }
+
+    .OneInch {
+        grid-area: OneInch;
+    }
+
+    .RavenCoin {
+        grid-area: RavenCoin;
+    }
+
+    .PaxGold {
+        grid-area: PaxGold;
+    }
+
+    .crypto_logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .crypto_logo:hover {
+        transform: scale(1.4);
+        transition: .5s;
+        cursor: pointer;
+    }
+
+    .cripto_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cripto_card div {
+        margin: 10px;
+    }
+}

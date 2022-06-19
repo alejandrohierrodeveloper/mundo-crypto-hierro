@@ -1,0 +1,46 @@
+#news {
+    .mainNews {
+        height: 100vh;
+        min-height: 100%;
+        overflow-y: scroll;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            margin: 30px;
+        }
+    }
+
+    .newsItem {
+        display: flex;
+        padding: 50px;
+
+        img {
+            margin: 15px;
+            height: 200px;
+
+            &:hover {
+                filter: blur(5px);
+                transition: .5s;
+                cursor: pointer;
+            }
+        }
+
+        article {
+            margin-left: 10px;
+        }
+
+        article p {
+            margin-top: 30px;
+        }
+    }
+
+}

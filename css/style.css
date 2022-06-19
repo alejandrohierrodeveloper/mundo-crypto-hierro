@@ -1,490 +1,469 @@
 * {
-    margin: 0;
-    padding: 0;
-}
+  margin: 0;
+  padding: 0; }
 
-/* Paleta de colores */
-/* 
---oxford-blue: #0a1128ff;
---royal-blue-dark: #001f54ff;
---indigo-dye: #034078ff;
---cg-blue: #1282a2ff;
---white: #fefcfbff;
- */
 .body {
-    background-color: #034078;
-}
+  background-color: #034078ff; }
 
 .globalFont {
-    font-family: 'Aleo', serif;
-}
-
-.logo {
-    height: 100px;
-    width: 100px;
-    margin: 20px;
-}
+  font-family: 'Aleo', serif; }
 
 .header {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    height: 15vh;
-    align-items: center;
-    min-height: 10rem;
-}
-
-.titleAndNav {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  height: 15vh;
+  align-items: center;
+  min-height: 10rem; }
+  .header .logo {
+    height: 100px;
+    width: 100px;
+    margin: 20px; }
+  .header .titleAndNav {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.titleAndNav h1 {
-    color: #034078;
-    margin: 5px;
-}
-
-.navigationButtons {
+    justify-content: space-evenly; }
+    .header .titleAndNav h1 {
+      color: #034078ff;
+      margin: 5px; }
+  .header .navigationButtons {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.navigationButtons a {
-    color: white;
-    text-decoration: none;
-    padding: 5px;
-
-}
-
-.navigationButtons li {
-    list-style-type: none;
-    background-color: #1282a2;
-    border: 3px #034078 solid;
-    padding: 5px;
-    margin: 10px;
-}
-
-.navigationButtons li:hover {
-    list-style-type: none;
-    background-color: #034078;
-    border: 3px #1282a2 solid;
-    cursor: pointer;
-    transform: rotate(360deg);
-    transition: .5s;
-}
+    flex-wrap: wrap; }
+    .header .navigationButtons a {
+      color: white;
+      text-decoration: none;
+      padding: 5px; }
+    .header .navigationButtons li {
+      list-style-type: none;
+      background-color: #1282a2ff;
+      border: 3px #034078ff solid;
+      padding: 5px;
+      margin: 10px; }
+      .header .navigationButtons li:hover {
+        list-style-type: none;
+        background-color: #034078ff;
+        border: 3px #1282a2ff solid;
+        cursor: pointer;
+        transform: rotate(360deg);
+        transition: .5s; }
 
 .footer {
-    background-color: #1282a2;
-    display: flex;
-    padding: 10px;
-    justify-content: space-around;
-    align-items: center;
-    height: 15vh;
-    color: white;
-    min-height: 10rem;
-}
-
-.footer section ul li {
+  background-color: #1282a2ff;
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+  color: white;
+  min-height: 10rem; }
+  .footer section ul li {
     list-style-type: none;
-    padding: 5px;
-}
+    padding: 5px; }
+    .footer section ul li a {
+      color: white;
+      text-decoration: none; }
+      .footer section ul li a:hover {
+        color: black; }
+    .footer section ul li h3 {
+      color: white;
+      font-weight: bold;
+      text-decoration: underline;
+      margin-bottom: 10px; }
 
-.footer section ul li a {
-    color: white;
-    text-decoration: none;
-}
+#index .main {
+  height: 70vh;
+  min-height: 40rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-.footer section ul li a:hover {
-    color: rgb(0, 0, 0);
-}
+#index .cryptoGrid {
+  display: grid;
+  width: 600px;
+  height: 600px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "btc eth usdt bnb" "solana Polkadot Avalanche Polygon" "DAI LiteCoin ChainLink Tron" "Algorand OneInch RavenCoin PaxGold";
+  /* background-color: #303030; */
+  align-content: center;
+  justify-items: center;
+  align-items: end; }
 
-.footer section ul li h3 {
-    color: white;
-    font-weight: bold;
-    text-decoration: underline;
-    margin-bottom: 10px;
+#index .btc {
+  grid-area: btc; }
 
-}
+#index .eth {
+  grid-area: eth; }
 
-.main {
-    height: 70vh;
-    min-height: 40rem;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+#index .usdt {
+  grid-area: usdt; }
 
-.mainFaq {
-    height: 100%;
-    display: block;
-}
+#index .bnb {
+  grid-area: bnb; }
 
-.mainContacto {
-    height: 80vh;
-    min-height: 50rem;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+#index .solana {
+  grid-area: solana; }
 
-.mainNews {
-    height: 100vh;
-    min-height: 100%;
-    overflow-y: scroll;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 100%; */
-}
+#index .Polkadot {
+  grid-area: Polkadot; }
 
-.mainLearn {
-    height: 70vh;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+#index .Avalanche {
+  grid-area: Avalanche; }
 
-.quotations {
-    padding: 100px;
-}
+#index .Polygon {
+  grid-area: Polygon; }
 
-.main .quotations .table td,
-th {
-    border: 1px solid;
-    border-color: white;
-    padding: 20px;
-}
+#index .DAI {
+  grid-area: DAI; }
 
-.main .quotations .table th {
-    background-color: #1282a2;
-}
+#index .LiteCoin {
+  grid-area: LiteCoin; }
 
-.main .quotations .table .centered {
-    padding: auto;
-}
+#index .ChainLink {
+  grid-area: ChainLink; }
 
-.contacto {
-    background-color: #1282a2;
-    padding: 50px;
-}
+#index .Tron {
+  grid-area: Tron; }
 
-.formContacto {
-    display: flex;
-    flex-direction: column;
-}
+#index .Algorand {
+  grid-area: Algorand; }
 
-.formContacto div {
-    padding: 10px;
-}
+#index .OneInch {
+  grid-area: OneInch; }
 
-.formContactoItem {
-    display: flex;
-    flex-direction: column;
-}
+#index .RavenCoin {
+  grid-area: RavenCoin; }
 
-.faq {
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-    min-height: 70vh;
-}
+#index .PaxGold {
+  grid-area: PaxGold; }
 
-.faq article {
-    margin-bottom: 25px;
-}
+#index .crypto_logo {
+  width: 100px;
+  height: 100px; }
 
-.news {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+#index .crypto_logo:hover {
+  transform: scale(1.4);
+  transition: .5s;
+  cursor: pointer; }
 
-.news h2 {
-    margin: 30px;
-}
+#index .cripto_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
-.newsItem {
-    display: flex;
-    padding: 50px;
-}
+#index .cripto_card div {
+  margin: 10px; }
 
-.newsItem img {
+#news .mainNews {
+  height: 100vh;
+  min-height: 100%;
+  overflow-y: scroll;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#news .news {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #news .news h2 {
+    margin: 30px; }
+
+#news .newsItem {
+  display: flex;
+  padding: 50px; }
+  #news .newsItem img {
     margin: 15px;
-    height: 200px;
-}
+    height: 200px; }
+    #news .newsItem img:hover {
+      filter: blur(5px);
+      transition: .5s;
+      cursor: pointer; }
+  #news .newsItem article {
+    margin-left: 10px; }
+  #news .newsItem article p {
+    margin-top: 30px; }
 
-.newsItem img:hover {
-    filter: blur(5px);
-    transition: .5s;
-    cursor: pointer;
-}
+#faq .mainFaq {
+  height: 100%;
+  display: block; }
 
-.newsItem article {
-    margin-left: 10px;
-}
+#faq .faq {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  min-height: 70vh; }
+  #faq .faq article {
+    margin-bottom: 25px; }
 
-.newsItem article p {
-    margin-top: 30px;
-}
-
-.learn {
-    display: flex;
-    flex-direction: column;
+@media (max-width: 768px) {
+  #faq .header {
+    height: 60vh;
+    justify-content: center;
     align-items: center;
-}
-
-.learn section {
-    margin: 5px;
-    padding: 5px;
-    background-color: #1282a2;
-    width: 70vw;
-}
-
-.cryptoGrid {
+    flex-direction: column;
+    min-height: 30rem; }
+  #faq .logo {
+    margin: 0px; }
+  #faq .titleAndNav {
+    text-align: center; }
+  #faq .navigationButtons {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center; }
+  #faq .footer {
+    flex-direction: column;
+    height: 20vh;
+    min-height: 15rem; }
+  #faq .main {
+    height: 140vh;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80rem; }
+  #faq .mainLearn {
+    height: 40vh;
+    align-items: center;
+    flex-direction: column; }
+  #faq .mainContacto {
+    height: 10vh;
+    align-items: center;
+    flex-direction: column;
+    min-height: 50rem; }
+  #faq .mainNews {
+    height: 180vh; }
+  #faq .cryptoGrid {
     display: grid;
     width: 600px;
     height: 600px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas:
-        "btc eth usdt bnb"
-        "solana Polkadot Avalanche Polygon"
-        "DAI LiteCoin ChainLink Tron"
-        "Algorand OneInch RavenCoin PaxGold";
-    /* background-color: #303030; */
-    align-content: center;
-    justify-items: center;
-    align-items: end;
-}
-
-.btc {
-    grid-area: btc;
-}
-
-.eth {
-    grid-area: eth;
-}
-
-.usdt {
-    grid-area: usdt;
-}
-
-.bnb {
-    grid-area: bnb;
-}
-
-.solana {
-    grid-area: solana;
-}
-
-.Polkadot {
-    grid-area: Polkadot;
-}
-
-.Avalanche {
-    grid-area: Avalanche;
-}
-
-.Polygon {
-    grid-area: Polygon;
-}
-
-.DAI {
-    grid-area: DAI;
-}
-
-.LiteCoin {
-    grid-area: LiteCoin;
-}
-
-.ChainLink {
-    grid-area: ChainLink;
-}
-
-.Tron {
-    grid-area: Tron;
-}
-
-.Algorand {
-    grid-area: Algorand;
-}
-
-.OneInch {
-    grid-area: OneInch;
-}
-
-.RavenCoin {
-    grid-area: RavenCoin;
-}
-
-.PaxGold {
-    grid-area: PaxGold;
-}
-
-.crypto_logo {
-    width: 100px;
-    height: 100px;
-}
-
-.crypto_logo:hover {
-    transform: scale(1.4);
-    transition: .5s;
-    cursor: pointer;
-}
-
-.cripto_card {
-    display: flex;
-    flex-direction: column;
+    grid-template-areas: "btc eth" "usdt bnb" "solana Polkadot" "DAI LiteCoin" "RavenCoin PaxGold" "Avalanche Polygon" "ChainLink Tron" "Algorand OneInch"; }
+  #faq .learn section {
+    width: 90vw; }
+  #faq .newsItem {
+    padding: 0px;
+    justify-content: center;
     align-items: center;
-}
-
-.cripto_card div {
-    margin: 10px;
-}
-
-@media (max-width: 768px) {
-
-    .header {
-        height: 60vh;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        min-height: 30rem;
-    }
-
-    .logo {
-        margin: 0px;
-    }
-
-    .titleAndNav {
-        text-align: center;
-    }
-
-    .navigationButtons {
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer {
-        flex-direction: column;
-        height: 20vh;
-        min-height: 15rem;
-    }
-
-    .main {
-        height: 140vh;
-        align-items: center;
-        flex-direction: column;
-        min-height: 80rem;
-    }
-
-    .mainLearn {
-        height: 40vh;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .mainContacto {
-        height: 10vh;
-        align-items: center;
-        flex-direction: column;
-        min-height: 50rem;
-    }
-
-    .mainNews {
-        height: 180vh;
-    }
-
-    .cryptoGrid {
-        display: grid;
-        width: 600px;
-        height: 600px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "btc eth"
-            "usdt bnb"
-            "solana Polkadot"
-            "DAI LiteCoin"
-            "RavenCoin PaxGold"
-            "Avalanche Polygon"
-            "ChainLink Tron"
-            "Algorand OneInch";
-    }
-
-    .learn section {
-        width: 90vw;
-    }
-
-
-    .newsItem {
-        padding: 0px;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-}
+    flex-direction: column; } }
 
 @media (max-width: 480px) {
-    .main {
-        height: 260vh;
-        min-height: 30rem;
-        min-height: 160rem;
-    }
+  #faq .main {
+    height: 260vh;
+    min-height: 30rem;
+    min-height: 160rem; }
+  #faq .mainLearn {
+    height: 70vh; }
+  #faq .mainContacto {
+    height: 10vh;
+    min-height: 50rem; }
+  #faq .learn section {
+    width: 90vw; }
+  #faq .mainNews {
+    height: 100%; }
+  #faq .cryptoGrid {
+    display: grid;
+    width: 100vw;
+    height: 1200px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "btc" "eth" "usdt" "bnb" "solana" "Polkadot" "DAI" "LiteCoin" "RavenCoin" "PaxGold" "Avalanche" "Polygon" "ChainLink" "Tron" "Algorand" "OneInch"; } }
 
-    .mainLearn {
-        height: 70vh;
-    }
+#learn .mainLearn {
+  height: 70vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-    .mainContacto {
-        height: 10vh;
-        min-height: 50rem;
-    }
+#learn .learn {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #learn .learn section {
+    margin: 5px;
+    padding: 5px;
+    background-color: #1282a2ff;
+    width: 70vw; }
 
-    .learn section {
-        width: 90vw;
-    }
+#contact .mainContacto {
+  height: 80vh;
+  min-height: 50rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-    .mainNews {
-        height: 100%;
-    }
+#contact .contacto {
+  background-color: #1282a2ff;
+  padding: 50px; }
 
-    .cryptoGrid {
-        display: grid;
-        width: 100vw;
-        height: 1200px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "btc"
-            "eth"
-            "usdt"
-            "bnb"
-            "solana"
-            "Polkadot"
-            "DAI"
-            "LiteCoin"
-            "RavenCoin"
-            "PaxGold"
-            "Avalanche"
-            "Polygon"
-            "ChainLink"
-            "Tron"
-            "Algorand"
-            "OneInch";
-    }
+#contact .formContacto {
+  display: flex;
+  flex-direction: column; }
+  #contact .formContacto div {
+    padding: 10px; }
 
-}
+#contact .formContactoItem {
+  display: flex;
+  flex-direction: column; }
+
+@media (max-width: 768px) {
+  #contact .header {
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 30rem; }
+  #contact .logo {
+    margin: 0px; }
+  #contact .titleAndNav {
+    text-align: center; }
+  #contact .navigationButtons {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center; }
+  #contact .footer {
+    flex-direction: column;
+    height: 20vh;
+    min-height: 15rem; }
+  #contact .main {
+    height: 140vh;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80rem; }
+  #contact .mainLearn {
+    height: 40vh;
+    align-items: center;
+    flex-direction: column; }
+  #contact .mainContacto {
+    height: 10vh;
+    align-items: center;
+    flex-direction: column;
+    min-height: 50rem; }
+  #contact .mainNews {
+    height: 180vh; }
+  #contact .cryptoGrid {
+    display: grid;
+    width: 600px;
+    height: 600px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "btc eth" "usdt bnb" "solana Polkadot" "DAI LiteCoin" "RavenCoin PaxGold" "Avalanche Polygon" "ChainLink Tron" "Algorand OneInch"; }
+  #contact .learn section {
+    width: 90vw; }
+  #contact .newsItem {
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; } }
+
+@media (max-width: 480px) {
+  #contact .main {
+    height: 260vh;
+    min-height: 30rem;
+    min-height: 160rem; }
+  #contact .mainLearn {
+    height: 70vh; }
+  #contact .mainContacto {
+    height: 10vh;
+    min-height: 50rem; }
+  #contact .learn section {
+    width: 90vw; }
+  #contact .mainNews {
+    height: 100%; }
+  #contact .cryptoGrid {
+    display: grid;
+    width: 100vw;
+    height: 1200px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "btc" "eth" "usdt" "bnb" "solana" "Polkadot" "DAI" "LiteCoin" "RavenCoin" "PaxGold" "Avalanche" "Polygon" "ChainLink" "Tron" "Algorand" "OneInch"; } }
+
+@media (max-width: 768px) {
+  #index .main {
+    height: 140vh;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80rem; }
+  #index .cryptoGrid {
+    display: grid;
+    width: 600px;
+    height: 600px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "btc eth" "usdt bnb" "solana Polkadot" "DAI LiteCoin" "RavenCoin PaxGold" "Avalanche Polygon" "ChainLink Tron" "Algorand OneInch"; }
+  #learn .mainLearn {
+    height: 40vh;
+    align-items: center;
+    flex-direction: column; }
+  #learn .learn section {
+    width: 90vw; }
+  .header {
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 30rem; }
+    .header .logo {
+      margin: 0px; }
+    .header .titleAndNav {
+      text-align: center; }
+    .header .navigationButtons {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: center; }
+  .footer {
+    flex-direction: column;
+    height: 20vh;
+    min-height: 15rem; }
+  #contact .mainContacto {
+    height: 10vh;
+    align-items: center;
+    flex-direction: column;
+    min-height: 50rem; }
+  #news .mainNews {
+    height: 180vh; }
+  #news .newsItem {
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; } }
+
+@media (max-width: 480px) {
+  #index .main {
+    height: 260vh;
+    min-height: 30rem;
+    min-height: 160rem; }
+  #index .cryptoGrid {
+    display: grid;
+    width: 100vw;
+    height: 1200px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "btc" "eth" "usdt" "bnb" "solana" "Polkadot" "DAI" "LiteCoin" "RavenCoin" "PaxGold" "Avalanche" "Polygon" "ChainLink" "Tron" "Algorand" "OneInch"; }
+  #learn .mainLearn {
+    height: 70vh; }
+  #learn .learn section {
+    width: 90vw; }
+  #contact .mainContacto {
+    height: 10vh;
+    min-height: 50rem; }
+  #news .mainNews {
+    height: 100%; } }

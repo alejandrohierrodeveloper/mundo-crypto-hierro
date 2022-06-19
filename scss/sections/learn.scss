@@ -1,0 +1,24 @@
+// LEARN
+#learn {
+    .mainLearn {
+        height: 70vh;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .learn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        section {
+            margin: 5px;
+            padding: 5px;
+            background-color: $cg-blue;
+            width: 70vw;
+        }
+    }
+
+}
