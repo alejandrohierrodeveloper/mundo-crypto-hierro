@@ -392,6 +392,10 @@
     grid-auto-flow: row;
     grid-template-areas: "btc" "eth" "usdt" "bnb" "solana" "Polkadot" "DAI" "LiteCoin" "RavenCoin" "PaxGold" "Avalanche" "Polygon" "ChainLink" "Tron" "Algorand" "OneInch"; } }
 
+@media (max-width: 1024px) {
+  #news .mainNews {
+    height: 140vh; } }
+
 @media (max-width: 768px) {
   #index .main {
     height: 140vh;
@@ -408,7 +412,7 @@
     grid-auto-flow: row;
     grid-template-areas: "btc eth" "usdt bnb" "solana Polkadot" "DAI LiteCoin" "RavenCoin PaxGold" "Avalanche Polygon" "ChainLink Tron" "Algorand OneInch"; }
   #learn .mainLearn {
-    height: 40vh;
+    height: 50vh;
     align-items: center;
     flex-direction: column; }
   #learn .learn section {
