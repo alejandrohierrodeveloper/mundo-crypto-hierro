@@ -1,12 +1,9 @@
 #news {
     .mainNews {
+        @extend %mainGeneric;
         height: 100vh;
         min-height: 100%;
         overflow-y: scroll;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .news {

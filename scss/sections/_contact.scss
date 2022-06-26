@@ -2,12 +2,9 @@
 #contact {
 
     .mainContacto {
+        @extend %mainGeneric;
         height: 80vh;
         min-height: 50rem;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .contacto {

@@ -2,12 +2,8 @@
 #index {
 
     .main {
-        height: 70vh;
+        @extend %mainGeneric;
         min-height: 40rem;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .cryptoGrid {
@@ -23,7 +19,6 @@
             "solana Polkadot Avalanche Polygon"
             "DAI LiteCoin ChainLink Tron"
             "Algorand OneInch RavenCoin PaxGold";
-        /* background-color: #303030; */
         align-content: center;
         justify-items: center;
         align-items: end;
@@ -96,12 +91,13 @@
     .crypto_logo {
         width: 100px;
         height: 100px;
-    }
 
-    .crypto_logo:hover {
-        transform: scale(1.4);
-        transition: .5s;
-        cursor: pointer;
+        &:hover {
+            transform: scale(1.4);
+            transition: .5s;
+            cursor: pointer;
+        }
+
     }
 
     .cripto_card {

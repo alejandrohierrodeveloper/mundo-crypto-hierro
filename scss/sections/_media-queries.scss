@@ -9,10 +9,9 @@
 
     #index {
         .main {
-            height: 140vh;
+            @include heightStyle(140vh, 80rem);
             align-items: center;
             flex-direction: column;
-            min-height: 80rem;
         }
 
         .cryptoGrid {
@@ -73,16 +72,14 @@
 
     .footer {
         flex-direction: column;
-        height: 20vh;
-        min-height: 15rem;
+        @include heightStyle(20vh, 15rem);
     }
 
     #contact {
         .mainContacto {
-            height: 10vh;
+            @include heightStyle(10vh, 50rem);
             align-items: center;
             flex-direction: column;
-            min-height: 50rem;
         }
     }
 
@@ -105,9 +102,7 @@
     #index {
 
         .main {
-            height: 260vh;
-            min-height: 30rem;
-            min-height: 160rem;
+            @include heightStyle(260vh, 160rem);
         }
 
         .cryptoGrid {
@@ -151,8 +146,7 @@
 
     #contact {
         .mainContacto {
-            height: 10vh;
-            min-height: 50rem;
+            @include heightStyle(10vh, 50rem);
         }
     }
 

@@ -1,11 +1,7 @@
 // LEARN
 #learn {
     .mainLearn {
-        height: 70vh;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %mainGeneric;
     }
 
     .learn {

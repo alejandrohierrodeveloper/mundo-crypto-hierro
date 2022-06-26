@@ -1,0 +1,13 @@
+//EXTEND
+%mainGeneric {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 70vh;
+}
+//MIXIN
+@mixin heightStyle ($altura, $alturaMinima){
+    height: $altura;
+    min-height: $alturaMinima;
+}
