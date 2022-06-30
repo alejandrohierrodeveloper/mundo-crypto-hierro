@@ -37,7 +37,6 @@
 
     #learn {
         .mainLearn {
-            height: 50vh;
             align-items: center;
             flex-direction: column;
         }
@@ -69,8 +68,6 @@
         }
     }
 
-
-
     .footer {
         flex-direction: column;
         @include heightStyle(20vh, 15rem);
@@ -85,9 +82,6 @@
     }
 
     #news {
-        .mainNews {
-            height: 180vh;
-        }
 
         .newsItem {
             padding: 0px;
@@ -135,9 +129,9 @@
     }
 
     #learn {
-        .mainLearn {
-            height: 70vh;
-        }
+        // .mainLearn {
+            // height: 70vh;
+        // }
 
         .learn section {
             width: 90vw;

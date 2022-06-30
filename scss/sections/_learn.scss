@@ -2,6 +2,12 @@
 #learn {
     .mainLearn {
         @extend %mainGeneric;
+        height: 100%;
+        min-height: 70vh;
+    }
+    .learnContent{
+        max-width: 60rem;
+        padding: 1rem 1rem 1rem 1rem;
     }
 
     .learn {
@@ -16,5 +22,11 @@
             width: 70vw;
         }
     }
-
+    .learnText{
+        text-align: justify;
+    }
+    .learnTitle{
+        font-weight: bold;
+        text-align: center;
+    }
 }

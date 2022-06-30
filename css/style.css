@@ -168,11 +168,14 @@
   flex-direction: column;
   align-items: center; }
   #news .news h2 {
-    margin: 30px; }
+    margin: 2rem;
+    font-weight: bold;
+    font-size: 2rem; }
 
 #news .newsItem {
   display: flex;
-  padding: 50px; }
+  padding: 1rem;
+  max-width: 70rem; }
   #news .newsItem img {
     margin: 15px;
     height: 200px; }
@@ -182,7 +185,11 @@
       cursor: pointer; }
   #news .newsItem article {
     margin-left: 10px; }
+    #news .newsItem article h3 {
+      font-weight: bold;
+      font-size: 1.5rem; }
   #news .newsItem article p {
+    text-align: justify;
     margin-top: 30px; }
 
 #faq .mainFaq {
@@ -193,85 +200,18 @@
   display: flex;
   flex-direction: column;
   padding: 50px;
-  min-height: 70vh; }
+  min-height: 70vh;
+  max-width: 50rem; }
   #faq .faq article {
     margin-bottom: 25px; }
 
-@media (max-width: 768px) {
-  #faq .header {
-    height: 60vh;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 30rem; }
-  #faq .logo {
-    margin: 0px; }
-  #faq .titleAndNav {
-    text-align: center; }
-  #faq .navigationButtons {
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center; }
-  #faq .footer {
-    flex-direction: column;
-    height: 20vh;
-    min-height: 15rem; }
-  #faq .main {
-    height: 140vh;
-    align-items: center;
-    flex-direction: column;
-    min-height: 80rem; }
-  #faq .mainLearn {
-    height: 40vh;
-    align-items: center;
-    flex-direction: column; }
-  #faq .mainContacto {
-    height: 10vh;
-    align-items: center;
-    flex-direction: column;
-    min-height: 50rem; }
-  #faq .mainNews {
-    height: 180vh; }
-  #faq .cryptoGrid {
-    display: grid;
-    width: 600px;
-    height: 600px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "btc eth" "usdt bnb" "solana Polkadot" "DAI LiteCoin" "RavenCoin PaxGold" "Avalanche Polygon" "ChainLink Tron" "Algorand OneInch"; }
-  #faq .learn section {
-    width: 90vw; }
-  #faq .newsItem {
-    padding: 0px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; } }
+#learn .mainLearn {
+  height: 100%;
+  min-height: 70vh; }
 
-@media (max-width: 480px) {
-  #faq .main {
-    height: 260vh;
-    min-height: 30rem;
-    min-height: 160rem; }
-  #faq .mainLearn {
-    height: 70vh; }
-  #faq .mainContacto {
-    height: 10vh;
-    min-height: 50rem; }
-  #faq .learn section {
-    width: 90vw; }
-  #faq .mainNews {
-    height: 100%; }
-  #faq .cryptoGrid {
-    display: grid;
-    width: 100vw;
-    height: 1200px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "btc" "eth" "usdt" "bnb" "solana" "Polkadot" "DAI" "LiteCoin" "RavenCoin" "PaxGold" "Avalanche" "Polygon" "ChainLink" "Tron" "Algorand" "OneInch"; } }
+#learn .learnContent {
+  max-width: 60rem;
+  padding: 1rem 1rem 1rem 1rem; }
 
 #learn .learn {
   display: flex;
@@ -282,6 +222,13 @@
     padding: 5px;
     background-color: #1282a2ff;
     width: 70vw; }
+
+#learn .learnText {
+  text-align: justify; }
+
+#learn .learnTitle {
+  font-weight: bold;
+  text-align: center; }
 
 #contact .mainContacto {
   height: 80vh;
@@ -397,7 +344,6 @@
     grid-auto-flow: row;
     grid-template-areas: "btc eth" "usdt bnb" "solana Polkadot" "DAI LiteCoin" "RavenCoin PaxGold" "Avalanche Polygon" "ChainLink Tron" "Algorand OneInch"; }
   #learn .mainLearn {
-    height: 50vh;
     align-items: center;
     flex-direction: column; }
   #learn .learn section {
@@ -425,8 +371,6 @@
     min-height: 50rem;
     align-items: center;
     flex-direction: column; }
-  #news .mainNews {
-    height: 180vh; }
   #news .newsItem {
     padding: 0px;
     justify-content: center;
@@ -446,8 +390,6 @@
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "btc" "eth" "usdt" "bnb" "solana" "Polkadot" "DAI" "LiteCoin" "RavenCoin" "PaxGold" "Avalanche" "Polygon" "ChainLink" "Tron" "Algorand" "OneInch"; }
-  #learn .mainLearn {
-    height: 70vh; }
   #learn .learn section {
     width: 90vw; }
   #contact .mainContacto {
